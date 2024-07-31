@@ -2,7 +2,7 @@
     position: fixed;
     width: 30%;
     height: 100%;
-    background: lightgray;
+    background: rgb(238, 236, 236);
     transition: transform 0.3s ease;
     z-index: 1000;
   }
@@ -32,9 +32,15 @@
   }
   .content P{
     font-size: 12px;
+    text-align:justify;
+    margin-right: 1rem;
+    opacity: 0.8;
   }
-  .content h3{
+  .content .heading{
     margin-top: 60px;
+    /* font-weight: 500; */
+    letter-spacing: 3px;
+    font-size: 1rem;
   }
   .content a{
     text-decoration: none;
@@ -64,20 +70,27 @@
   .main-icons{
     width: 50%;
     display: flex;
-    justify-content: space-around;
+    justify-content:start;
+    gap: 1.5rem;
   }
   .icons{
     text-align: center;
+    background: transparent !important;
+
   }
   .icons p{
-    margin-top: 0;
+    margin:0 0 0 12px; 
+      
   }
   .sub-icons{
-    background: #c0bdbc;
-    padding: 5px;
+    background: #dcdada;
+    padding: 10px;
     border-radius: 50%;
   }
 
+  .priceDiv{
+    margin-top: 2rem;
+  }
   @media(max-width : 700px){
     .sidebar{
       width: 60%;

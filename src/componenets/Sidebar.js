@@ -2,11 +2,14 @@ import React from "react";
 import "./Sidebar.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
-  faHeart,
   faShareNodes,
-  faEye,
   faArrowRight,faAnglesLeft
 } from "@fortawesome/free-solid-svg-icons";
+import { faHeart } from '@fortawesome/free-regular-svg-icons';
+// import { faShareNodes } from '@fortawesome/free-regular-svg-icons';
+import { faEye } from '@fortawesome/free-regular-svg-icons';
+
+
 
 const Sidebar = ({ isOpen, toggleSidebar }) => {
   return (
@@ -15,12 +18,12 @@ const Sidebar = ({ isOpen, toggleSidebar }) => {
       <FontAwesomeIcon icon={faAnglesLeft} />
       </button>
       <div className="content">
-        <h3>
+        <p className="heading">
           MAITREYA BUDDHA
           <br /> IN GESTURE OF
           <br /> FEARLESSNESS
           <br /> (ABHAYA MUDRA)
-        </h3>
+        </p>
         <div className="main-icons">
           <div className="icons">
             <FontAwesomeIcon icon={faHeart} className="sub-icons" />
@@ -35,7 +38,7 @@ const Sidebar = ({ isOpen, toggleSidebar }) => {
             <p>27</p>
           </div>
         </div>
-        <p>
+        <p className="priceDiv">
           Dynasty: Ahichchatra
           <br />
           Period: 200 CE
