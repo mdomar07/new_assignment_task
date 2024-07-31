@@ -1,3 +1,15 @@
+
+/* In your CSS or styled-components */
+@font-face {
+  font-family: 'Poppins';
+  src: url('https://fonts.gstatic.com/s/poppins/v21/pxiByp8kv8JHgFVrLGT9Z1xlFQ.woff2') format('woff2');
+  font-display: swap; /* Ensures fallback fonts are used until the custom font loads */
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+}
+
 .app {
     background-image: url(./componenets/gray.jpg);
     background-size: cover;
